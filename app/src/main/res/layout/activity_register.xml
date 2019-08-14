@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".Register">
 
     <RelativeLayout
@@ -15,7 +16,7 @@
             android:id="@+id/tvDaftar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Daftar"
+            android:text="DAFTAR"
             android:textSize="45dp"
             android:textAlignment="center" />
 
@@ -171,14 +172,14 @@
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:text=":"
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/etDPwd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:textSize="30dp"
                 android:inputType="textPassword"/>
-
-        <EditText
-            android:id="@+id/etDPwd1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30dp" />
             
         </LinearLayout>
 

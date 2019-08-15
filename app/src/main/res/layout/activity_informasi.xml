@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".Informasi">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="17dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Sistem pembayaran ini dilakukan setiap tanggal 1. Jika Anda tidak tepat melakukan pembayaran maka pengguna tidak bisa mengakses akun ini."
+            android:textAlignment="center"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="30dp"
+            android:text="Pengambilan sampah akan dimulai dari pukul 09.00 sampai pukul 16.00"
+            android:textAlignment="center"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginVertical="30dp"
+            android:text="Sistem pembayaran dapat menggunakan OVO, GO-Pay, Dana, Alfamart dan Indomaret"
+            android:textAlignment="center"
+            android:textSize="19dp" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -9,18 +9,52 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Informasi"
-            android:label="Informasi">
+        <activity
+            android:name=".Login"
+            android:label="Login"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".menu"
+            android:label="Menu"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".Informasi"
+            android:label="Informasi"
+            android:parentActivityName=".menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blackskystudio.com.dinaskebersihan.menu"/>
+        </activity>
+
+        <activity android:name=".layanan"
+            android:label="layanan">
+        </activity>
+
+        <activity android:name=".profil"
+            android:label="Profil">
+        </activity>
+
         <activity
             android:name=".Register"
             android:label="Daftar">
+        </activity>
 
+        <activity
+            android:name=".Tentang"
+            android:label="Tentang"
+            android:parentActivityName=".menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blackskystudio.com.dinaskebersihan.menu"/>
         </activity>
     </application>
 

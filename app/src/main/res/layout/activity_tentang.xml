@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Informasi">
+    tools:context=".Tentang">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -21,30 +22,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/tentang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Sistem pembayaran ini dilakukan setiap tanggal 1. Jika Anda tidak tepat melakukan pembayaran maka pengguna tidak bisa mengakses akun ini."
+            android:text="Aplikasi dinas kebersihan merupakan sarana digital untuk memudahkan masyarakat dengan menyediakan layanan pengambilan sampah di masing-masing tempat seperti rumah, perkantoran, pabrik dan rumah makan"
             android:textAlignment="center"
-            android:textSize="19dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="35dp"
-            android:layout_marginTop="30dp"
-            android:text="Pengambilan sampah akan dimulai dari pukul 09.00 sampai pukul 16.00"
-            android:textAlignment="center"
-            android:textSize="19dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="35dp"
-            android:layout_marginVertical="30dp"
-            android:text="Sistem pembayaran dapat melalui Alfamart dan Indomaret"
-            android:textAlignment="center"
-            android:textSize="19dp" />
+            android:textSize="19dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginVertical="30dp" />
 
     </LinearLayout>
 

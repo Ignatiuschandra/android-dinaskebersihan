@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="63dp"
+            android:text="DINAS KEBERSIHAN TANGERANG BANTEN"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="151dp"
+            android:src="@drawable/group438"
+            android:background="@null"
+            android:onClick="goto_layanan"/>
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="224dp"
+            android:layout_toStartOf="@+id/button"
+            android:src="@drawable/group441"
+            android:background="@null"
+            android:onClick="goto_info"/>
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button2"
+            android:layout_toEndOf="@+id/button"
+            android:src="@drawable/group440"
+            android:background="@null"
+            android:onClick="goto_about"/>
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_24px"
+            android:background="@null" />
+
+        <!--<Button-->
+            <!--android:id="@+id/button5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="86dp"-->
+            <!--android:text="Button" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="86dp"
+            android:textSize="22dp"
+            android:text="Log Out"
+            android:onClick="logout"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

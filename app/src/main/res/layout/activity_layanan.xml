@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layanan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:id="@+id/jenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan pilih jenis sampah yang akan anda buang:"
+            android:textAlignment="textStart"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/jnssmph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/jenis"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_sampah1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampah alam"
+                />
+            <CheckBox
+                android:id="@+id/cb_sampah2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampah rumah tangga"
+                />
+            <CheckBox
+                android:id="@+id/cb_sampah3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampah konsumsi"
+                />
+            <CheckBox
+                android:id="@+id/cb_sampah4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampah perkantoran"
+                />
+            <CheckBox
+                android:id="@+id/cb_sampah5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampah industri"
+                />
+            <CheckBox
+                android:id="@+id/cb_sampah6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampah olahan kimia"
+                />
+
+            <Button
+                android:id="@+id/btn_buang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buang sampah"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

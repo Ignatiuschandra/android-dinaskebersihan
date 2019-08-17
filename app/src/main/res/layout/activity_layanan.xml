@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:text="Silahkan pilih jenis sampah yang akan anda buang:"
             android:textAlignment="textStart"
-            android:textSize="12dp"
+            android:textSize="18dp"
             android:layout_marginLeft="5dp"
             />
 
@@ -33,48 +33,53 @@
                 android:id="@+id/cb_sampah1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sampah alam"
-                />
+                android:textSize="15dp"
+                android:text="Sampah alam" />
             <CheckBox
                 android:id="@+id/cb_sampah2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sampah rumah tangga"
-                />
+                android:textSize="15dp" />
             <CheckBox
                 android:id="@+id/cb_sampah3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sampah konsumsi"
-                />
+                android:textSize="15dp" />
             <CheckBox
                 android:id="@+id/cb_sampah4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sampah perkantoran"
-                />
+                android:textSize="15dp" />
             <CheckBox
                 android:id="@+id/cb_sampah5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sampah industri"
+                android:textSize="15dp"
                 />
             <CheckBox
                 android:id="@+id/cb_sampah6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sampah olahan kimia"
-                />
-
-            <Button
-                android:id="@+id/btn_buang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Buang sampah"
-                />
+                android:textSize="15dp" />
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btn_buang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buang Sampah"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:onClick="send_layanan"/>
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

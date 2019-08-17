@@ -20,45 +20,57 @@
                 android:id="@+id/etDNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:hint="Nama Lengkap"/>
 
             <EditText
                 android:id="@+id/etDAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:hint="Alamat"/>
 
             <EditText
                 android:id="@+id/etDHP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:hint="No. Handphone"/>
 
             <EditText
                 android:id="@+id/etDEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:hint="E-Mail"/>
 
-            <EditText
-                android:id="@+id/etDPwd1"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textSize="25dp"
-                android:hint="Kata Sandi"/>
+                app:passwordToggleEnabled="true">
 
-            <EditText
-                android:id="@+id/etDPwd2"
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etDPwd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textSize="20dp"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textSize="25dp"
-                android:hint="Ulangi Kata Sandi"/>
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etDPwd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ulangi Password"
+                    android:textSize="20dp"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
 
@@ -67,10 +79,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:text="Daftar"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:background="@color/colorAccent"
             android:textAllCaps="false"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:onClick="do_register"/>
 
     </RelativeLayout>
 

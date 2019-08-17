@@ -25,8 +25,6 @@ public class Login extends AppCompatActivity {
 
 
     public void Login(View view) {
-        Log.d("user", etEmail.getText().toString());
-        Log.d("pass", etPassword.getText().toString());
         if (etEmail.getText().toString().equalsIgnoreCase("user@mail.com")
                 && etPassword.getText().toString().equalsIgnoreCase("user")){
             Intent i = new Intent(Login.this, menu.class);
@@ -35,5 +33,10 @@ public class Login extends AppCompatActivity {
             Toast.makeText(this, "E-Mail atau Password Salah!",
                     Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void goto_register(View view) {
+        Intent i = new Intent(Login.this, Register.class);
+        startActivity(i);
     }
 }

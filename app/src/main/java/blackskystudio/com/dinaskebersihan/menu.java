@@ -33,4 +33,9 @@ public class menu extends AppCompatActivity {
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
     }
+
+    public void goto_profil(View view) {
+        Intent i = new Intent(menu.this, profil.class);
+        startActivity(i);
+    }
 }

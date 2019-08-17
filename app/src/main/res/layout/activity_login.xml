@@ -18,7 +18,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="24dp"
             android:paddingTop="56dp"
@@ -68,20 +68,39 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="24dp"
                 android:padding="12dp"
-                android:text="Login"
+                android:text="MASUK"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
                 android:onClick="Login"/>
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/link_signup"
-            android:layout_width="fill_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:text="Tidak memiliki akun? DAFTAR"
-            android:textSize="16dip"
-            android:layout_alignParentBottom="true"/>
+            android:layout_marginVertical="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tidak memiliki akun? "
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/link_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DAFTAR"
+                android:textSize="16dip"
+                android:onClick="goto_register"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
 
     </RelativeLayout>
 

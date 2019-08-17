@@ -13,21 +13,10 @@
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <TextView
-            android:id="@+id/profil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Profile"
-            android:textAlignment="center"
-            android:textSize="12dp"
-            android:layout_marginLeft="5dp"
-            />
-
         <LinearLayout
             android:id="@+id/txtNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/profil"
             android:orientation="horizontal">
 
             <!-- NAMA -->
@@ -42,7 +31,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nama"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:text="Ini Nama Orang"
+                    android:clickable="false"
+                    android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
@@ -65,7 +57,9 @@
                     android:layout_height="wrap_content"
                     android:hint="Alamat"
                     android:text="Jalan watugong, Lowokwaru, Malang"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
@@ -88,7 +82,9 @@
                     android:layout_height="wrap_content"
                     android:hint="Email"
                     android:text="willyadit@gmail.com"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
@@ -111,7 +107,9 @@
                     android:layout_height="wrap_content"
                     android:hint="No Telpon"
                     android:text="089662806561"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
@@ -134,7 +132,9 @@
                     android:layout_height="wrap_content"
                     android:hint="Kode Pembayaran"
                     android:text="WLY - 001"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>

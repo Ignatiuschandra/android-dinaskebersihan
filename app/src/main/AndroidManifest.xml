@@ -7,9 +7,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/daoon"
+        android:icon="@mipmap/dauun"
         android:label="Aplikasi Dinas Kebersihan"
-        android:roundIcon="@mipmap/daoon"
+        android:roundIcon="@mipmap/dauun"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity

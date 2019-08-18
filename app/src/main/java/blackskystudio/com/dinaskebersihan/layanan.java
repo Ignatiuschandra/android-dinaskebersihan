@@ -74,10 +74,10 @@ public class layanan extends AppCompatActivity {
 
                                         Intent i = new Intent(layanan.this, menu.class);
                                         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                        Bundle bundle = getIntent().getExtras();
-                                        String id_u = bundle.getString("id");
-
-                                        i.putExtra("id",id_u);
+//                                        Bundle bundle = getIntent().getExtras();
+//                                        String id_u = bundle.getString("id");
+//
+//                                        i.putExtra("id",id_u);
                                         startActivity(i);
                                     }
                                 });
@@ -134,7 +134,7 @@ public class layanan extends AppCompatActivity {
 //                Bundle bundle = getIntent().getExtras();
 //                String id_user = bundle.getString("id");
 
-                SharedPreferences mSettings = layanan.this.getSharedPreferences("Settings", Context.MODE_PRIVATE);
+                SharedPreferences mSettings = layanan.this.getSharedPreferences("data", Context.MODE_PRIVATE);
                 String id_user = mSettings.getString("id", "missing");
 
                 params.put("function","");

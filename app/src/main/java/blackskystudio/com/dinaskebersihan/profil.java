@@ -91,7 +91,7 @@ public class profil extends AppCompatActivity {
 
 //                Bundle bundle = getIntent().getExtras();
 //                String id_user = bundle.getString("id");
-                SharedPreferences mSettings = profil.this.getSharedPreferences("Settings", Context.MODE_PRIVATE);
+                SharedPreferences mSettings = profil.this.getSharedPreferences("data", Context.MODE_PRIVATE);
                 String id_user = mSettings.getString("id", "missing");
 
                 params.put("id_user",id_user);

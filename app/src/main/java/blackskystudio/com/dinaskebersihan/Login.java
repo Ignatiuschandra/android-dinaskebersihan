@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
 
     public void Login(View view) {
         RequestQueue queue = Volley.newRequestQueue(this);
-        final String url = "http://192.168.1.5/Dinas_Kebersihan/auth.php";
+        final String url = "https://projectbsdinaskebersihan.000webhostapp.com/auth.php";
 
 //        progress.show();
 

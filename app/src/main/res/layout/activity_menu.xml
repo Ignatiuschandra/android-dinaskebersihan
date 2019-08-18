@@ -23,7 +23,7 @@
             android:textAlignment="center"
             android:textSize="30dp"
             android:textColor="@color/font"
-            android:fontFamily="@font/Multicolore"/>
+            android:fontFamily="@font/multicolore"/>
 
 
         <ImageButton

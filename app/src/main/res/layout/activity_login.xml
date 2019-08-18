@@ -39,7 +39,7 @@
                 android:text="DINAS KEBERSIHAN TANGERANG BANTEN"
                 android:textSize="25dp"
                 android:textColor="@color/font"
-                android:fontFamily="@font/Multicolore"/>
+                android:fontFamily="@font/multicolore"/>
 
             <!-- Email Label -->
             <android.support.design.widget.TextInputLayout

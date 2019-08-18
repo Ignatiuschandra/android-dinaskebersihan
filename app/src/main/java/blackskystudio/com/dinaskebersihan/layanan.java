@@ -50,7 +50,7 @@ public class layanan extends AppCompatActivity {
 
     public void send_layanan(View view) {
         RequestQueue queue = Volley.newRequestQueue(layanan.this);
-        final String url = "http://192.168.1.5/Dinas_Kebersihan/insert.php";
+        final String url = "https://projectbsdinaskebersihan.000webhostapp.com/insert.php";
 
         //menyiapkan request
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,

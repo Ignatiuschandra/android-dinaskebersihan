@@ -44,7 +44,7 @@ public class Register extends AppCompatActivity {
     public void do_register(View view) {
         if (etDPwd1.getText().toString().equalsIgnoreCase(etDPwd2.getText().toString())){
             RequestQueue queue = Volley.newRequestQueue(this);
-            final String url = "http://192.168.1.5/Dinas_Kebersihan/insert.php";
+            final String url = "https://projectbsdinaskebersihan.000webhostapp.com/insert.php";
 
 //          progress.show();
 

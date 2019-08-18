@@ -7,14 +7,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/dauun"
-        android:label="Aplikasi Dinas Kebersihan"
-        android:roundIcon="@mipmap/dauun"
+        android:icon="@mipmap/clipart"
+        android:label="Dinas Kebersihan"
+        android:roundIcon="@mipmap/clipart"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".Login"
-            android:label="Login"
+            android:label="Dinas Kebersihan"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

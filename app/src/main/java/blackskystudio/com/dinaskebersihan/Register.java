@@ -95,7 +95,7 @@ public class Register extends AppCompatActivity {
                     params.put("No_telp",etDHP.getText().toString());
                     params.put("email",etDEmail.getText().toString());
                     params.put("password",etDPwd1.getText().toString());
-
+                    params.put("function","register");
                     return params;
                 }
             };

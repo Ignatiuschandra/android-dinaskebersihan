@@ -20,28 +20,28 @@
                 android:id="@+id/etDNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:hint="Nama Lengkap"/>
 
             <EditText
                 android:id="@+id/etDAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:hint="Alamat"/>
 
             <EditText
                 android:id="@+id/etDHP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:hint="No. Handphone"/>
 
             <EditText
                 android:id="@+id/etDEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:hint="E-Mail"/>
 
             <android.support.design.widget.TextInputLayout
@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:inputType="textPassword"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -68,7 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Ulangi Password"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:inputType="textPassword" />
             </android.support.design.widget.TextInputLayout>
 

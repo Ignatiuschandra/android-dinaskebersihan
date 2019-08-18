@@ -3,6 +3,7 @@ package blackskystudio.com.dinaskebersihan;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class menu extends AppCompatActivity {
@@ -36,6 +37,12 @@ public class menu extends AppCompatActivity {
 
     public void goto_profil(View view) {
         Intent i = new Intent(menu.this, profil.class);
+
+        Bundle bundle = getIntent().getExtras();
+        String id = bundle.getString("id");
+
+        i.putExtra("id",id);
+
         startActivity(i);
     }
 }

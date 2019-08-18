@@ -27,7 +27,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
-                    android:id="@+id/nama"
+                    android:id="@+id/etPNama"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nama"
@@ -53,6 +53,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
+                    android:id="@+id/etPAlamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Alamat"
@@ -78,6 +79,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
+                    android:id="@+id/etPEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
@@ -103,6 +105,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
+                    android:id="@+id/etPNHP"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="No Telpon"
@@ -128,6 +131,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
+                    android:id="@+id/etPKB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Kode Pembayaran"

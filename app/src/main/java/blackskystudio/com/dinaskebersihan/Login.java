@@ -98,7 +98,7 @@ public class Login extends AppCompatActivity {
             protected Map<String, String> getParams()
             {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("email",etPassword.getText().toString());
+                params.put("email",etEmail.getText().toString());
                 params.put("password",etPassword.getText().toString());
 
                 return params;

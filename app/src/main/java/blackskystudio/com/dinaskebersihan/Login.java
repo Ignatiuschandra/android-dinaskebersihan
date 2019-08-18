@@ -1,6 +1,8 @@
 package blackskystudio.com.dinaskebersihan;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -59,7 +61,12 @@ public class Login extends AppCompatActivity {
                                 Intent i = new Intent(Login.this, menu.class);
                                 startActivity(i);
 
-                                i.putExtra("id",ini);
+//                                i.putExtra("id",ini);
+
+                                SharedPreferences mSettings     = Login.this.getSharedPreferences("data", Context.MODE_PRIVATE);
+                                SharedPreferences.Editor editor = mSettings.edit();
+                                editor.putString("id", ini);
+                                editor.apply();
 
 //                                progress.dismiss();
                                 startActivity(i);

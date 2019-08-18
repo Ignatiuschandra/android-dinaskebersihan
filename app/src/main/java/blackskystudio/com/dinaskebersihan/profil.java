@@ -1,6 +1,8 @@
 package blackskystudio.com.dinaskebersihan;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -87,8 +89,11 @@ public class profil extends AppCompatActivity {
             {
                 Map<String, String> params = new HashMap<String, String>();
 
-                Bundle bundle = getIntent().getExtras();
-                String id_user = bundle.getString("id");
+//                Bundle bundle = getIntent().getExtras();
+//                String id_user = bundle.getString("id");
+                SharedPreferences mSettings = profil.this.getSharedPreferences("Settings", Context.MODE_PRIVATE);
+                String id_user = mSettings.getString("id", "missing");
+
                 params.put("id_user",id_user);
                 params.put("function","getProfil");
 

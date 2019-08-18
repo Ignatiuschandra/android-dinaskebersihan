@@ -26,10 +26,10 @@ public class menu extends AppCompatActivity {
 
     public void goto_layanan(View view) {
         Intent i = new Intent(menu.this, layanan.class);
-        Bundle bundle = getIntent().getExtras();
-        String id = bundle.getString("id");
+//        Bundle bundle = getIntent().getExtras();
+//        String id = bundle.getString("id");
 
-        i.putExtra("id",id);
+//        i.putExtra("id",id);
         startActivity(i);
     }
 
@@ -42,10 +42,10 @@ public class menu extends AppCompatActivity {
     public void goto_profil(View view) {
         Intent i = new Intent(menu.this, profil.class);
 
-        Bundle bundle = getIntent().getExtras();
-        String id = bundle.getString("id");
+//        Bundle bundle = getIntent().getExtras();
+//        String id = bundle.getString("id");
 
-        i.putExtra("id",id);
+//        i.putExtra("id",id);
 
         startActivity(i);
     }

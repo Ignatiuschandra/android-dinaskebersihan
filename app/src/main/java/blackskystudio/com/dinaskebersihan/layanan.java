@@ -1,7 +1,9 @@
 package blackskystudio.com.dinaskebersihan;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -129,8 +131,11 @@ public class layanan extends AppCompatActivity {
                 Gson gson = new Gson();
                 String jSampah = gson.toJson(sampah);
 
-                Bundle bundle = getIntent().getExtras();
-                String id_user = bundle.getString("id");
+//                Bundle bundle = getIntent().getExtras();
+//                String id_user = bundle.getString("id");
+
+                SharedPreferences mSettings = layanan.this.getSharedPreferences("Settings", Context.MODE_PRIVATE);
+                String id_user = mSettings.getString("id", "missing");
 
                 params.put("function","");
                 params.put("ID_USER",id_user);

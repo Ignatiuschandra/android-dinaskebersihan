@@ -32,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Nama"
                     android:inputType="text"
-                    android:text="Ini Nama Orang"
+                    android:text="-"
                     android:clickable="false"
                     android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
@@ -57,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Alamat"
-                    android:text="Jalan watugong, Lowokwaru, Malang"
+                    android:text="-"
                     android:inputType="text"
                     android:clickable="false"
                     android:focusable="false"/>
@@ -83,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
-                    android:text="willyadit@gmail.com"
+                    android:text="-"
                     android:inputType="text"
                     android:clickable="false"
                     android:focusable="false"/>
@@ -109,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="No Telpon"
-                    android:text="089662806561"
+                    android:text="-"
                     android:inputType="text"
                     android:clickable="false"
                     android:focusable="false"/>
@@ -135,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Kode Pembayaran"
-                    android:text="WLY - 001"
+                    android:text="-"
                     android:inputType="text"
                     android:clickable="false"
                     android:focusable="false"/>

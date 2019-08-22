@@ -43,7 +43,7 @@ public class profil extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        final String url = "http://192.168.1.5/Dinas_Kebersihan/read.php";
+        final String url = "https://projectbsdinaskebersihan.000webhostapp.com/read.php";
 
 //        progress.show();
 

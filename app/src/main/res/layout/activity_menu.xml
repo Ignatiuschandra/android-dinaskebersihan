@@ -32,34 +32,42 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="175dp"
             android:src="@drawable/group438"
             android:background="@null"
             android:tooltipText="Layanan"
             android:onClick="goto_layanan"/>
 
-        <ImageButton
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="300dp"
-            android:layout_toStartOf="@+id/button"
-            android:src="@drawable/group441"
-            android:background="@null"
-            android:tooltipText="Informasi"
-            android:onClick="goto_info"/>
+            android:layout_below="@+id/button"
+            android:orientation="horizontal"
+            android:layout_marginVertical="60dp"
+            android:gravity="center">
 
-        <ImageButton
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/button2"
-            android:layout_toEndOf="@+id/button"
-            android:src="@drawable/group440"
-            android:background="@null"
-            android:tooltipText="Tentang"
-            android:onClick="goto_about"/>
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group441"
+                android:background="@null"
+                android:tooltipText="Informasi"
+                android:onClick="goto_info"
+                android:layout_marginHorizontal="30dp"/>
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group440"
+                android:background="@null"
+                android:tooltipText="Tentang"
+                android:onClick="goto_about"
+                android:layout_marginHorizontal="30dp"/>
+        </LinearLayout>
+
+
 
         <ImageButton
             android:id="@+id/button4"

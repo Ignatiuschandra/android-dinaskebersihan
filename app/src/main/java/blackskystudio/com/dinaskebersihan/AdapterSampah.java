@@ -1,5 +1,8 @@
 package blackskystudio.com.dinaskebersihan;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -43,7 +46,7 @@ public class AdapterSampah extends RecyclerView.Adapter<AdapterSampah.AdapterSam
         private TextView reqNama, reqAlamat, reqJSampah;
         private LinearLayout wrapper;
 
-        public AdapterSampahHolder(View itemView) {
+        public AdapterSampahHolder(final View itemView) {
             super(itemView);
             reqNama     = (TextView)itemView.findViewById(R.id.reqNama);
             reqAlamat   = (TextView)itemView.findViewById(R.id.reqAlamat);
@@ -56,6 +59,10 @@ public class AdapterSampah extends RecyclerView.Adapter<AdapterSampah.AdapterSam
                 public void onClick(View v) {
                     String id = (String)v.getTag(R.id.wrapper);
                     Log.d("id", id);
+
+                    Intent intent = new Intent(v.getContext(), detail.class);
+                    intent.putExtra("id_sampah", id);
+                    v.getContext().startActivity(intent);
                 }
             });
         }

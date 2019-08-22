@@ -5,115 +5,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".detail">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-
-    <LinearLayout
-        android:layout_width="348dp"
-        android:layout_height="222dp"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="16dp">
-
-        <TextView
+        <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="150dp"
-            android:text="Dimas Bagus"
-            android:textSize="18dp" />
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ambil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <TextView
+                android:id="@+id/dNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="150dp"
+                android:text="-"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/dAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="150dp"
+                android:text="-"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/dNoTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="150dp"
+                android:text="-"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Keterangan:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dSampah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="-"
+                android:textSize="14dp"
+                android:maxLines="7"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/linearLayout3"-->
+            <!--android:layout_width="89dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="26dp"-->
+            <!--android:layout_marginEnd="12dp"-->
+            <!--android:layout_marginBottom="412dp"-->
+            <!--android:orientation="vertical"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/btn_ambil"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/linearLayout2"-->
+            <!--app:layout_constraintTop_toTopOf="parent">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="3"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="35dp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Sampah"-->
+                <!--android:textSize="20dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--Code hack jangan dihapus-->
         <TextView
+            android:id="@+id/d_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="########"
+            android:layout_below="@+id/linearLayout2"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"/>
+        <!--Code hack jangan dihapus-->
+
+        <Button
+            android:id="@+id/btn_ambil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="150dp"
-            android:text="Jl. mergosono gg 3b"
-            android:textSize="18dp" />
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:text="Ambil Sampah"
+            android:textAllCaps="false"
+            android:layout_margin="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:onClick="updateData"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="150dp"
-            android:text="089662806561"
-            android:textSize="18dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Keterangan:"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="- Sampah rumah tangga"
-            android:textSize="14dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="- Sampah konsumsi"
-            android:textSize="14dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="- Sampah industri"
-            android:textSize="14dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="89dp"
-        android:layout_height="94dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="27dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="3"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="35dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Sampah"
-            android:textSize="20dp" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_ambil"
-        android:layout_width="349dp"
-        android:layout_height="46dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimaryDark"
-        android:text="Ambil Sampah"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="532dp" />
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

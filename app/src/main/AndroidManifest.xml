@@ -14,8 +14,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".detail"></activity>
         <activity
-            android:name=".detailsampah"
-            android:label="@string/title_activity_detailsampah"
+            android:name=".DaftarRequest"
+            android:label="Request Pengambilan Sampah"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Login"

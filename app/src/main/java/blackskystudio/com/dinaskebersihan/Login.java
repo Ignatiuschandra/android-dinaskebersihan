@@ -56,12 +56,15 @@ public class Login extends AppCompatActivity {
                             int hasil = Integer.parseInt(jsonObject.getString("response"));
 
                             if (hasil == 1){
-                                String ini = jsonObject.getString("id");
+                                String ini      = jsonObject.getString("id");
+                                String is_admin = jsonObject.getString("is_admin");
 
-                                Intent i = new Intent(Login.this, menu.class);
-                                startActivity(i);
-
-//                                i.putExtra("id",ini);
+                                Intent i;
+                                if(is_admin.equalsIgnoreCase("1")){ //ke admin
+                                    i = new Intent(Login.this, DaftarRequest.class);
+                                }else{
+                                    i = new Intent(Login.this, menu.class);
+                                }
 
                                 SharedPreferences mSettings     = Login.this.getSharedPreferences("data", Context.MODE_PRIVATE);
                                 SharedPreferences.Editor editor = mSettings.edit();

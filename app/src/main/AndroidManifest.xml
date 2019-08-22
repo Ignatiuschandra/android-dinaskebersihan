@@ -12,6 +12,11 @@
         android:roundIcon="@mipmap/clipart"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".detail"></activity>
+        <activity
+            android:name=".detailsampah"
+            android:label="@string/title_activity_detailsampah"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Login"
             android:label="Dinas Kebersihan"
@@ -22,50 +27,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".menu"
             android:label="Menu"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Informasi"
             android:label="Informasi"
             android:parentActivityName=".menu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="blackskystudio.com.dinaskebersihan.menu"/>
+                android:value="blackskystudio.com.dinaskebersihan.menu" />
         </activity>
-
-        <activity android:name=".layanan"
+        <activity
+            android:name=".layanan"
             android:label="Layanan"
             android:parentActivityName=".menu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="blackskystudio.com.dinaskebersihan.menu"/>
+                android:value="blackskystudio.com.dinaskebersihan.menu" />
         </activity>
-
-        <activity android:name=".profil"
+        <activity
+            android:name=".profil"
             android:label="Profil"
             android:parentActivityName=".menu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="blackskystudio.com.dinaskebersihan.menu"/>
+                android:value="blackskystudio.com.dinaskebersihan.menu" />
         </activity>
-
         <activity
             android:name=".Register"
-            android:label="Daftar">
-        </activity>
-
+            android:label="Daftar" />
         <activity
             android:name=".Tentang"
             android:label="Tentang"
             android:parentActivityName=".menu">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="blackskystudio.com.dinaskebersihan.menu"/>
+                android:value="blackskystudio.com.dinaskebersihan.menu" />
         </activity>
     </application>
 

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Dinas Kebersihan</string>
     <string name="title_activity_informasi">Informasi</string>
+    <string name="title_activity_detailsampah">detailsampah</string>
 </resources>
